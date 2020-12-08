@@ -1,0 +1,142 @@
+.header__wrapper {
+  display: flex;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.header__nav {
+  display: flex;
+}
+
+.header__logo {
+  margin-left: 136px;
+  margin-top: 24px;
+}
+
+.header::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background: #ebeffb;
+  top: 80px;
+}
+
+.header__toggle {
+  display: none;
+}
+
+@media (max-width: 1023px) {
+  .header__wrapper {
+    display: flex;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 1023px;
+    margin: 0 auto;
+    justify-content: space-between;
+  }
+
+  .header__toggle {
+    position: relative;
+    display: inline-block;
+    padding: 0;
+    width: 25px;
+    height: 25px;
+    margin-top: 26px;
+    margin-right: 56px;
+    background: transparent;
+    border: none;
+    user-select: none;
+    cursor: pointer;
+    z-index: 7;
+  }
+
+  .header__toggle span {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    width: 100%;
+    height: 2px;
+    font-size: 0;
+    color: transparent;
+    transition: 0.3s;
+  }
+
+  .header__toggle--close span {
+    background: transparent;
+  }
+
+  .header__toggle span::after,
+  .header__toggle span::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 2.8px;
+    background: #111111;
+    transform-origin: 50% 50%;
+    transition: 0.3s 0.3s, transform 0.3s;
+  }
+
+  .header__toggle span::after {
+    top: 7px;
+  }
+
+  .header__toggle span::before {
+    top: -7px;
+  }
+
+  .header__toggle--close span::after,
+  .header__toggle--close span::before {
+    transform: rotate3d(0, 0, 1, 45deg);
+    transition: 0.3s, transform 0.3s 0.3s;
+    top: 0;
+  }
+
+  .header__toggle--close span::before {
+    transform: rotate3d(0, 0, 1, -45deg);
+  }
+
+  .page-header__toggle--no-js {
+    display: none;
+  }
+
+  .header__logo {
+    margin-left: 54px;
+    margin-top: 15px;
+  }
+
+  .header__logo svg {
+    width: 85px;
+    height: 50px;
+  }
+}
+
+@media (max-width: 767px) {
+  .header__wrapper {
+    display: flex;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 767px;
+    margin: 0 auto;
+    justify-content: space-between;
+  }
+
+  .header__toggle {
+    width: 24px;
+    height: 24px;
+    margin-right: 38px;
+  }
+
+  .header__logo {
+    margin-left: 16px;
+    margin-top: 18px;
+  }
+
+  .header__logo svg {
+    width: 85px;
+    height: 50px;
+  }
+}

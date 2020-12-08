@@ -1,0 +1,20 @@
+.main-block {
+  padding-top: 214px;
+  height: 512px;
+  padding-bottom: 210px;
+}
+
+@media (max-width: 1023px) {
+  .main-block {
+    height: 780px;
+    padding-top: 116px;
+    padding-bottom: 104px;
+  }
+}
+
+@media (max-width: 767px) {
+  .main-block {
+    padding-top: 84px;
+    padding-bottom: 64px;
+  }
+}

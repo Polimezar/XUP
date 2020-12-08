@@ -1,0 +1,36 @@
+.socials__list {
+  display: flex;
+  margin: 0;
+  list-style: none;
+  margin-top: 65px;
+  margin-left: 65px;
+}
+
+.socials__item {
+  margin-right: 16px;
+}
+
+.socials__list svg:hover,
+.socials__list svg:focus {
+  stroke: #1421ff;
+  fill: #1421ff;
+}
+
+@media (max-width: 1023px) {
+  .socials__list {
+    width: 170px;
+    flex-wrap: wrap;
+    margin-top: 38px;
+  }
+}
+
+@media (max-width: 767px) {
+  .socials__list {
+    width: 320px;
+    flex-wrap: nowrap;
+    margin-top: 48px;
+    margin-right: 0;
+    margin-left: 0;
+    padding: 0;
+  }
+}

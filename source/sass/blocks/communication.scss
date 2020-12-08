@@ -1,0 +1,43 @@
+.communication {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.communication__list {
+  margin: 0;
+  margin-top: 50px;
+  list-style: none;
+}
+
+.communication__item a {
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #2d2d30;
+  margin-left: 18px;
+}
+
+.communication__item,
+.communication__tel {
+  margin-top: 4px;
+  margin-left: 4px;
+}
+
+.communication__item:hover,
+.communication__item:focus {
+  opacity: 0.5;
+}
+
+@media (max-width: 767px) {
+  .communication {
+    justify-content: flex-start;
+  }
+
+  .communication__list {
+    padding: 0;
+    margin-top: 48px;
+  }
+}
